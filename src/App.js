@@ -6,6 +6,7 @@ import 'antd/dist/antd';
 import { Typography } from 'antd';
 import FunctionComponent from './pages/Component/FunctionComponent/FunctionComponent';
 import FunctionState from './pages/State/FunctionState/FunctionState';
+import Code from './Code';
 
 const { Title } = Typography;
 
@@ -17,6 +18,8 @@ function App() {
                 <Link to='/functionComponent'>Function Component</Link>
                 <Link to='/functionState'>Function State</Link>
             </header>
+
+            <Code />
 
             <Routes>
                 <Route path='/'></Route>
