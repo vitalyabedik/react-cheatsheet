@@ -17,6 +17,7 @@ function App() {
                 <Link to='/'>Home</Link>
                 <Link to='/functionComponent'>Function Component</Link>
                 <Link to='/functionState'>Function State</Link>
+                <Link to='/VirtualDom'>VirtualDom</Link>
             </header>
 
             <Code />
