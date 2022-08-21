@@ -35,7 +35,7 @@ function App() {
             </Routes>
 
             <div>
-                <Title level={1}>React Cheat Sheet</Title>
+                <Title level={1}>React Cheat Sheet App</Title>
             </div>
         </>
     );
