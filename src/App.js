@@ -36,6 +36,7 @@ function App() {
 
             <div>
                 <Title level={1}>React Cheat Sheet App</Title>
+                <Title level={2}>React Cheat Sheet App</Title>
             </div>
         </>
     );
