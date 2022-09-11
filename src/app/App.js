@@ -1,22 +1,19 @@
 import './App.scss';
 import 'antd/dist/antd';
 
-import { Typography } from 'antd';
 import Code from '../Code';
 import AppRouter from './AppRouter';
-
-const { Title } = Typography;
 
 function App() {
     return (
         <>
             <AppRouter />
-            <div>
+            {/* <div>
                 <Title level={1}>React Cheat Sheet App</Title>
                 <Title level={2}>React Cheat Sheet App</Title>
-            </div>
+            </div> */}
 
-            <Code />
+            {/* <Code /> */}
         </>
     );
 }

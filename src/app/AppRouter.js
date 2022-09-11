@@ -1,14 +1,14 @@
-import Layout from '../components/layout/Layout';
-
 import { Routes, Route } from 'react-router-dom';
-import { routes } from '../router/routes';
+
+import AppLayout from '../components/UI/layout/AppLayout';
 import { Home, NotFound404 } from '../pages';
+import { routes } from '../router/routes';
 
 const AppRouter = () => {
     return (
         <div>
             <Routes>
-                <Route path='/' element={<Layout />}>
+                <Route path='/' element={<AppLayout />}>
                     <Route index element={<Home />} />
                     {routes.map((route) => (
                         <Route path={route.path} element={<route.element />} />

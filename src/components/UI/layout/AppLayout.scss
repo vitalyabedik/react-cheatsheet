@@ -1,0 +1,15 @@
+.layout {
+    text-align: center;
+
+    &__header {
+        background: #fff;
+        padding: 0;
+    }
+
+    &__content {
+        background: #fff;
+        margin: 24px 16px;
+        padding: 24px;
+        min-height: 280px;
+    }
+}
