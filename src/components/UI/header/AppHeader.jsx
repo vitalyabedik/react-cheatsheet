@@ -1,50 +1,93 @@
-import { NavLink, Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import './AppHeader.scss';
 import { Menu } from 'antd';
 
-import { routes } from '../../../router/routes';
-
 const AppHeader = () => {
-    const items = [
-        { label: 'Home', key: 'Home' },
-        { label: 'VirtualDom', key: 'VirtualDom' },
-        { label: 'ComponentClass', key: 'ComponentClass' },
-        { label: 'ComponentFunction', key: 'ComponentFunction' },
-        // { label: 'PropsClass', key: 'PropsClass' },
-        // { label: 'PropsFunction', key: 'PropsFunction' },
-        // { label: 'StateClass', key: 'StateClass' },
-        // { label: 'StateFunction', key: 'StateFunction' },
-        // { label: 'Lifecycle', key: 'Lifecycle' },
-        // { label: 'Events', key: 'Events' },
-        // { label: 'Key', key: 'Key' },
-        // { label: 'Refs', key: 'Refs' },
-        // { label: 'Fragment', key: 'Fragment' },
-        // { label: 'ReactMemo', key: 'ReactMemo' },
-        // { label: 'UseMemo', key: 'UseMemo' },
-        // { label: 'UseEffect', key: 'UseEffect' },
-        // { label: 'UseContext', key: 'UseContext' },
-        // { label: 'Form', key: 'Form' },
-        // { label: 'Routing', key: 'Routing' },
-        // { label: 'AsyncRequest', key: 'AsyncRequest' },
+    const [current, setCurrent] = useState('');
+
+    const menuItems = [
+        { label: <Link to='/'>Home</Link>, key: 'Home' },
+        { label: <Link to='VirtualDom'>VirtualDom</Link>, key: 'VirtualDom' },
+        {
+            label: 'Component',
+            children: [
+                {
+                    label: <Link to='ComponentClass'>Class</Link>,
+                    key: 'ComponentClass',
+                },
+                {
+                    label: <Link to='ComponentFunction'>Functional</Link>,
+                    key: 'ComponentFunction',
+                },
+            ],
+        },
+        {
+            label: 'Props',
+            children: [
+                {
+                    label: <Link to='PropsClass'>Class</Link>,
+                    key: 'PropsClass',
+                },
+                {
+                    label: <Link to='PropsFunction'>Functional</Link>,
+                    key: 'PropsFunction',
+                },
+            ],
+        },
+        {
+            label: 'State',
+            children: [
+                {
+                    label: <Link to='StateClass'>Class</Link>,
+                    key: 'StateClass',
+                },
+                {
+                    label: <Link to='StateFunction'>Functional</Link>,
+                    key: 'StateFunction',
+                },
+            ],
+        },
+        { label: <Link to='Lifecycle'>Lifecycle</Link>, key: 'Lifecycle' },
+        { label: <Link to='Events'>Events</Link>, key: 'Events' },
+        { label: <Link to='Key'>Key</Link>, key: 'Key' },
+        { label: <Link to='Refs'>Refs</Link>, key: 'Refs' },
+        { label: <Link to='Fragment'>Fragment</Link>, key: 'Fragment' },
+        {
+            label: 'Memo',
+            children: [
+                {
+                    label: <Link to='ReactMemo'>ReactMemo</Link>,
+                    key: 'ReactMemo',
+                },
+                { label: <Link to='UseMemo'>useMemo</Link>, key: 'UseMemo' },
+            ],
+        },
+        { label: <Link to='UseEffect'>useEffect</Link>, key: 'UseEffect' },
+        { label: <Link to='UseContext'>useContext</Link>, key: 'UseContext' },
+        { label: <Link to='Form'>Form</Link>, key: 'Form' },
+        { label: <Link to='Routing'>Routing</Link>, key: 'Routing' },
+        {
+            label: <Link to='AsyncRequest'>AsyncRequest</Link>,
+            key: 'AsyncRequest',
+        },
     ];
 
+    const onClick = (e) => {
+        setCurrent(e.key);
+    };
+
     return (
-        <div>
-            <div className='header'>
-                {routes.map((item) => (
-                    <div className='nav__items'>
-                        <Link to={item.path}>{item.path}</Link>
-                    </div>
-                ))}
-            </div>
-            {/* <header className='header'>
-                <Menu items={items} />
-                {routes.map((link) => (
-                    <Link to={link.label}>{link.key}</Link>
-                ))}
-            </header> */}
-        </div>
+        <>
+            <header className='header'>
+                <Menu
+                    onClick={onClick}
+                    defaultSelectedKeys={[current]}
+                    items={menuItems}
+                />
+            </header>
+        </>
     );
 };
 
