@@ -11,7 +11,11 @@ const AppRouter = () => {
                 <Route path='/' element={<AppLayout />}>
                     <Route index element={<Home />} />
                     {routes.map((route) => (
-                        <Route path={route.path} element={<route.element />} />
+                        <Route
+                            key={route.path}
+                            path={route.path}
+                            element={<route.element />}
+                        />
                     ))}
                     <Route path='*' element={<NotFound404 />} />
                 </Route>
