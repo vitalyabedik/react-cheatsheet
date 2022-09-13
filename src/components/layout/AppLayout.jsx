@@ -4,8 +4,8 @@ import './AppLayout.scss';
 import { Layout } from 'antd';
 import { Typography } from 'antd';
 
-import AppHeader from '../header/AppHeader';
-import AppFooter from '../footer/AppFooter';
+import AppHeader from './header/AppHeader';
+import AppFooter from './footer/AppFooter';
 
 const { Header, Footer, Sider, Content } = Layout;
 const { Title } = Typography;
