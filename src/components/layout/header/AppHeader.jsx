@@ -4,12 +4,14 @@ import { Link } from 'react-router-dom';
 import './AppHeader.scss';
 import { Menu } from 'antd';
 import { routes } from '../../../router/routes';
-import { delLastPropAndEditFirstProp } from '../../../utils/delLastPropAndEditFirstProp/delLastPropAndEditFirstProp';
+import { delLastAndEditProp } from '../../../utils/delLastAndEditProp/delLastAndEditProp';
+import { addNewPropToArr } from '../../../utils/addNewPropToArr/addNewPropToArr';
 
 const AppHeader = () => {
     const [current, setCurrent] = useState('');
 
-    const menuArray = delLastPropAndEditFirstProp(routes, 'Home', 0);
+    const arrWithMenuProp = addNewPropToArr(routes);
+    const menuArray = delLastAndEditProp(arrWithMenuProp, 'Home', 0);
 
     const menuItems = menuArray.map((item) => ({
         label: (
