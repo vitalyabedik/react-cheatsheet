@@ -45,7 +45,7 @@ import {
 } from '../utils/constants/path.constants';
 
 export const routes = [
-    { path: '/', element: Home },
+    { path: '/', element: Home, index: true },
     { path: VIRTUAL__DOM, element: VirtualDom },
     { path: COMPONENT_CLASS, element: ComponentClass },
     { path: COMPONENT_FUNCTION, element: ComponentFunction },
