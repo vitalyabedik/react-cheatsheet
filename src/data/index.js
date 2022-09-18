@@ -1,18 +1,19 @@
-export { default as VirtualDom } from './code/virtualDom';
-export {
-    default as componentClass,
-    componentFunctional,
-} from './code/component';
-export { default as propsClass, propsFunctional } from './code/props';
-export { default as stateClass, stateFunctional } from './code/state';
-export { default as lifecycle } from './code/lifecycle';
-export { default as events } from './code/events';
-export { default as key } from './code/key';
-export { default as useEffect } from './code/useEffect';
-export { default as refs } from './code/refs';
-export { default as fragment } from './code/fragment';
-export { default as reactMemo, useMemo } from './code/memo';
-export { default as useContext } from './code/useContext';
-export { default as form } from './code/form';
-export { default as asyncRequest } from './code/asyncRequest';
-export { default as routing } from './code/routing';
+export { virtualDom } from './code/virtualDom/virtualDom';
+export { componentClass } from './code/component/componentClass';
+export { componentFunctional } from './code/component/componentFunctional';
+export { propsClass } from './code/props/propsClass';
+export { propsFunctional } from './code/props/propsFunctional';
+export { stateClass } from './code/state/stateClass';
+export { stateFunctional } from './code/state/stateFunctional';
+export { lifecycle } from './code/lifecycle/lifecycle';
+export { events } from './code/events/events';
+export { key } from './code/key/key';
+export { useEffect } from './code/useEffect/useEffect';
+export { refs } from './code/refs/refs';
+export { fragment } from './code/fragment/fragment';
+export { reactMemo } from './code/memo/reactMemo';
+export { useMemo } from './code/memo/useMemo';
+export { useContext } from './code/useContext/useContext';
+export { form } from './code/form/form';
+export { asyncRequest } from './code/asyncRequest/asyncRequest';
+export { routing } from './code/routing/routing';

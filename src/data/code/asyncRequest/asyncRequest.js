@@ -1,1 +1,1 @@
-export const AsyncRequest = [];
+export const asyncRequest = [];
