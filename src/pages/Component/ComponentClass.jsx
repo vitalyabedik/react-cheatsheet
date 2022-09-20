@@ -4,7 +4,10 @@ import { componentClass } from '../../data';
 const ClassComponent = () => {
     return (
         <>
-            <CardItem code={componentClass} />
+            <CardItem
+                title={'Базовая запись классовой компоненты'}
+                code={componentClass}
+            />
         </>
     );
 };
