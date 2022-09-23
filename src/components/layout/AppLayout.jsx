@@ -19,7 +19,7 @@ const AppLayout = () => {
                 </Sider>
                 <Layout className='layout'>
                     <Header className='layout__header'>
-                        <Title level={1}>React Cheat Sheet App</Title>
+                        <Title level={1}>Шпаргалка по React</Title>
                     </Header>
                     <Content className='layout__content'>
                         <Outlet />

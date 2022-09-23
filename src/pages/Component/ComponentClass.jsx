@@ -1,13 +1,16 @@
-import CardItem from '../../components/Cards/CardItem'; // import { componentClass } from '../../data/code/component/componentClass';
+import { Typography } from 'antd';
+
+import CodeBlock from '../../components/CodeBlock/CodeBlock';
 import { componentClass } from '../../data';
+
+const { Title, Text, Link } = Typography;
 
 const ClassComponent = () => {
     return (
         <>
-            <CardItem
-                title={'Базовая запись классовой компоненты'}
-                code={componentClass}
-            />
+            <Title level={2}>Классовые компоненты</Title>
+            <Title level={3}>Базовая запись классовой компоненты</Title>
+            <CodeBlock code={componentClass} />
         </>
     );
 };
