@@ -1,14 +1,7 @@
-export const componentClass = `class HelloMessage extends React.Component {
-    handlePress = () => {
-      console.log('Hello')
-    }
+export const componentClass = `import React from 'react';
 
-    render() {
-      return (
-        <div>
-          <p>Hello {this.props.name}</p>
-          <button onClick={this.handlePress}>Say Hello</button>
-        </div>
-      );
-    }
-  }`;
+class BasicComponent extends React.Component {
+  render() {
+    return <h1>Basic Class Component</h1>
+  }
+}`;

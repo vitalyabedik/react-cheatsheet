@@ -4,19 +4,16 @@ const CodeBlock = ({ code }) => {
     return (
         <>
             <CopyBlock
-                codeContainerStyle={{ backgroundColor: 'red' }}
                 text={code}
                 theme={nord}
                 language='jsx'
                 showLineNumbers
                 customStyle={{
-                    width: '500px',
-                    height: '250px',
+                    maxWidth: '500px',
                     overflowY: 'scroll',
-                    margin: '0px 0.75rem',
+                    margin: '0px auto',
                     borderRadius: '5px',
                     boxShadow: '1px 2px 3px rgba(0,0,0,0.35)',
-                    fontSize: '0.75rem',
                     textAlign: 'left',
                 }}
             />
