@@ -9,6 +9,7 @@ export const LIFECYCLE = 'Lifecycle';
 export const EVENTS = 'Events';
 export const KEY = 'Key';
 export const REFS = 'Refs';
+export const USE_REF = 'useRef';
 export const FRAGMENT = 'Fragment';
 export const REACT__MEMO = 'ReactMemo';
 export const USE__MEMO = 'useMemo';

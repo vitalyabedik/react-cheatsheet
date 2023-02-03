@@ -11,6 +11,7 @@ export { default as Events } from './Events/Events';
 export { default as Key } from './Key/Key';
 export { default as UseEffect } from './Effect/UseEffect';
 export { default as Refs } from './Refs/Refs';
+export { default as UseRef } from './Refs/UseRef.jsx';
 export { default as Fragment } from './Fragment/Fragment';
 export { default as ReactMemo } from './Memo/ReactMemo';
 export { default as UseMemo } from './Memo/UseMemo';

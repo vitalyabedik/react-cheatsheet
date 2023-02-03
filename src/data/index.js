@@ -10,6 +10,7 @@ export { events } from './code/events/events';
 export { key } from './code/key/key';
 export { useEffect } from './code/useEffect/useEffect';
 export { refs } from './code/refs/refs';
+export { useRef } from './code/useRef/useRef';
 export { fragment } from './code/fragment/fragment';
 export { reactMemo } from './code/memo/reactMemo';
 export { useMemo } from './code/memo/useMemo';
