@@ -14,6 +14,7 @@ export { useRef } from './code/useRef/useRef';
 export { fragment } from './code/fragment/fragment';
 export { reactMemo } from './code/memo/reactMemo';
 export { useMemo } from './code/memo/useMemo';
+export { useCallback } from './code/useCallback/useCallback';
 export { context } from './code/context/context';
 export { form } from './code/form/form';
 export { asyncRequest } from './code/asyncRequest/asyncRequest';

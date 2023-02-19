@@ -15,6 +15,7 @@ export { default as UseRef } from './Refs/UseRef.jsx';
 export { default as Fragment } from './Fragment/Fragment';
 export { default as ReactMemo } from './Memo/ReactMemo';
 export { default as UseMemo } from './Memo/UseMemo';
+export { default as UseCallback } from './Callback/UseCallback';
 export { default as Context } from './Context/Context';
 export { default as Form } from './Form/Form';
 export { default as AsyncRequest } from './AsyncRequest/AsyncRequest';
