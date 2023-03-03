@@ -1,4 +1,4 @@
-import { Typography, Divider } from 'antd';
+import { Typography } from 'antd';
 
 import CodeBlock from '../../components/CodeBlock/CodeBlock';
 import { componentFunctional } from '../../data';
@@ -6,14 +6,14 @@ import { componentFunctional } from '../../data';
 const { Title } = Typography;
 
 const FunctionComponent = () => {
-    return (
-        <>
-            <Title level={2}>Функциональные компоненты</Title>
+  return (
+    <>
+      <Title level={2}>Функциональные компоненты</Title>
 
-            <Divider>Базовая запись функционального компонента</Divider>
-            <CodeBlock code={componentFunctional} />
-        </>
-    );
+      <Title level={3}>Базовая запись функционального компонента</Title>
+      <CodeBlock code={componentFunctional} />
+    </>
+  );
 };
 
 export default FunctionComponent;
