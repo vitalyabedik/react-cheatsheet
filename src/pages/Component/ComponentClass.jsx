@@ -1,4 +1,4 @@
-import { Typography, Divider } from 'antd';
+import { Typography } from 'antd';
 
 import CodeBlock from '../../components/CodeBlock/CodeBlock';
 import { componentClass } from '../../data';
