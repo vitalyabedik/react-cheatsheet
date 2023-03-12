@@ -1,4 +1,4 @@
-import { Typography, Divider } from 'antd';
+import { Typography } from 'antd';
 
 const { Title, Text, Paragraph } = Typography;
 
