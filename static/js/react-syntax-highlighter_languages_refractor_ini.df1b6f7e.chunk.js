@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_cheatsheet=self.webpackChunkreact_cheatsheet||[]).push([[6495],{3409:function(t){function e(t){t.languages.ini={comment:/^[ \t]*[;#].*$/m,selector:/^[ \t]*\[.*?\]/m,constant:/^[ \t]*[^\s=]+?(?=[ \t]*=)/m,"attr-value":{pattern:/=.*/,inside:{punctuation:/^[=]/}}}}t.exports=e,e.displayName="ini",e.aliases=[]}}]);
+//# sourceMappingURL=react-syntax-highlighter_languages_refractor_ini.df1b6f7e.chunk.js.map
