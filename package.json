@@ -1,6 +1,6 @@
 {
-  "name": "react-cheat-sheet",
-  "homepage": "https://vitalyabedik.github.io/Redev.React.1-project.React-cheatsheet",
+  "name": "react-cheatsheet",
+  "homepage": "https://vitalyabedik.github.io/react-cheatsheet",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

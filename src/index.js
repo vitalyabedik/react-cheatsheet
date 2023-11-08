@@ -8,7 +8,7 @@ import App from './app/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <BrowserRouter basename='/Redev.React.1-project.React-cheatsheet'>
+    <BrowserRouter basename='/react-cheatsheet'>
         <App />
     </BrowserRouter>
 );
